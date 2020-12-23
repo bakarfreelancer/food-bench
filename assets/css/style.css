@@ -1,0 +1,212 @@
+/* 
+Orange Primary color   : #e75b1e
+Orange Secondary color : #90360f
+Logo color             : #ff6d00
+
+*/
+/* ====================== 
+   ========Global=========
+ ====================== */
+
+/* =======Font========= */
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto/Roboto-Regular.woff") format("woff");
+}
+
+/* =======Variables========= */
+:root {
+  --primary-color: #ff6d00;
+  --secondary-color: #90360f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 30px 0;
+}
+/* ==Links == */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+/* ====================== 
+========Reusable=======
+====================== */
+.verticalCenter {
+  align-self: center;
+}
+/* ==Headings== */
+.sectionHeading {
+  font-size: 200%;
+  font-weight: normal;
+}
+.headingSubText {
+  color: rgb(80, 80, 80);
+  display: block;
+  margin: 10px 0 30px;
+}
+/* ==Buttons== */
+.btn {
+  display: block;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 5px 8px;
+}
+.btnPrimary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  border-radius: 15px;
+}
+.btnFull {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 130%;
+}
+.btnPrimary:hover {
+  background-color: #fff;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btnWhite {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.cardOne {
+  margin: 8px;
+  position: relative;
+}
+.cardOne .content img {
+  width: 100%;
+}
+.cardOne .content .title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000000c9;
+  color: var(--primary-color);
+  width: -webkit-fill-available;
+  padding: 10px;
+  text-align: center;
+  font-size: 120%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ====== Header ======= */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  width: 80px;
+}
+#logo img {
+  width: 100%;
+}
+
+nav a {
+  padding: 5px;
+  margin: 3px;
+}
+
+/* ==Search Section== */
+.searchSection {
+  background-color: #e6e6e6;
+}
+.searchSection h1,
+.searchSection small {
+  text-align: center;
+}
+.searchBox {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.searchBox input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 400px;
+}
+.searchBox a {
+  font-size: 120%;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+}
+
+/* ==Winter Section== */
+.winterSection {
+  background-color: #e5e5e5;
+}
+.winterSection .d-flex {
+  flex-direction: row-reverse;
+}
+.winterSection h2,
+.winterSection small {
+  text-align: right;
+}
+.winterSection .btn {
+  margin-left: auto;
+}
+.winterSpicy {
+  padding: 10px;
+  position: relative;
+}
+.winterSpicy img {
+  width: 100%;
+}
+.winterSpicy .content {
+  position: absolute;
+  bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 15px;
+  font-size: 150%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: rgb(66, 66, 66);
+  color: rgb(192, 192, 192);
+  padding: 10px 0;
+  text-align: center;
+}
+/* ==Responsive== */
+@media (max-width: 567px) {
+  .winterSection h2,
+  .winterSection small {
+    text-align: left;
+  }
+  .winterSection .btn {
+    margin-left: 0;
+  }
+}

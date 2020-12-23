@@ -1,0 +1,28 @@
+.container {
+  max-width: 1140px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+
+.col-1-of-4 {
+  flex: 0 0 25%;
+  overflow: hidden;
+}
+.col-3-of-4 {
+  flex: 0 0 75%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+}
+
+@media (max-width: 567px) {
+  .d-flex {
+    display: block;
+  }
+  .col-1-of-4 {
+    /* width: 100%; */
+  }
+}
