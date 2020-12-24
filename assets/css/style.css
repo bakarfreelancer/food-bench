@@ -223,9 +223,20 @@ footer {
 .blurImage {
   filter: blur(3px);
 }
-
+/* ==About== */
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.aboutPage main {
+  flex-grow: 1;
+}
 /* ==Responsive== */
 @media (max-width: 567px) {
+  .searchBox input {
+    width: 250px;
+  }
   .winterSection h2,
   .winterSection small {
     text-align: left;
