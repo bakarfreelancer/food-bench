@@ -15,14 +15,78 @@
   flex: 0 0 75%;
   overflow: hidden;
 }
+
 @media (min-width: 768px) {
+}
+
+/*====================
+=====CSS GRID ======== 
+====================== */
+
+/* .gridContainer { */
+/* display: grid; */
+/* grid-template-columns: 140px 130px auto auto; */
+/* height: 400px; */
+/* grid-template-rows: 100px 100px; */
+/* grid-gap: 50px; */
+/* justify-content: space-around; */
+/* align-content: center; */
+/* } */
+/* .gridItemOne {
+  background: red;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+} */
+.gridItemOne {
+  grid-area: sideBar;
+  align-self: stretch;
+}
+.gridItemTwo {
+  grid-area: oneOfThreeImage1;
+}
+.gridItemThree {
+  grid-area: oneOfThreeImage2;
+}
+.gridItemFour {
+  grid-area: oneOfThreeImage3;
+}
+.gridItemFive {
+  grid-area: oneOfTwo1;
+}
+.gridItemSix {
+  grid-area: oneOfTwo2;
+}
+.gridItemSeven {
+  grid-area: fullBanner;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "sideBar oneOfThreeImage1 oneOfThreeImage1 oneOfThreeImage2 oneOfThreeImage2 oneOfThreeImage3 oneOfThreeImage3"
+    "sideBar oneOfTwo1 oneOfTwo1 oneOfTwo1 oneOfTwo2 oneOfTwo2 oneOfTwo2"
+    "fullBanner fullBanner fullBanner fullBanner fullBanner fullBanner fullBanner ";
+  grid-gap: 25px 15px;
+  align-items: center;
 }
 
 @media (max-width: 567px) {
   .d-flex {
     display: block;
   }
-  .col-1-of-4 {
-    /* width: 100%; */
+
+  /* ==CSS GRID */
+  .gridContainer {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "oneOfThreeImage1"
+      "oneOfThreeImage2"
+      "oneOfThreeImage3"
+      "sideBar"
+      "oneOfTwo1"
+      "oneOfTwo2"
+      "fullBanner";
   }
 }

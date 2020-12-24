@@ -59,6 +59,14 @@ h6 {
   align-self: center;
 }
 /* ==Headings== */
+.pageHeading {
+  text-align: center;
+  padding: 15px;
+  background-color: #e5e5e5;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
 .sectionHeading {
   font-size: 200%;
   font-weight: normal;
@@ -95,8 +103,15 @@ h6 {
   background-color: #fff;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  border-radius: 15px;
+}
+.btnWhite:hover {
+  background-color: var(--primary-color);
+  border-color: #fff;
+  color: #fff;
 }
 
+/* ==Card== */
 .cardOne {
   margin: 8px;
   position: relative;
@@ -200,6 +215,15 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+
+/* ======allRecipes======== */
+.allRecipes img {
+  width: 100%;
+}
+.blurImage {
+  filter: blur(3px);
+}
+
 /* ==Responsive== */
 @media (max-width: 567px) {
   .winterSection h2,
