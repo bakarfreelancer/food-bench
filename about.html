@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Food Bench | About</title>
+    <style></style>
 </head>
 <body class="aboutPage">
     <header>
@@ -26,6 +27,18 @@
                 </nav>
             </div><!--d-flex-->
         </div><!--contaner-->
+        <div class="colorChanger">
+            <div class="openClose closed" onclick="openClose()"><i class="fas fa-eye"></i></div>
+            <div class="colors hide">
+                <div class="colorBlock green" onclick="changeColor('green')"></div>
+                <div class="colorBlock blue" onclick="changeColor('blue')"></div>
+                <div class="colorBlock orange" onclick="changeColor('orange')"></div>
+                <div class="colorBlock red" onclick="changeColor('red')"></div>
+                <div class="colorBlock pink" onclick="changeColor('pink')"></div>
+                <div class="colorBlock brown" onclick="changeColor('brown')"></div>
+                <div class="colorBlock black" onclick="changeColor('black')"></div>
+            </div>
+        </div><!--colorChanger-->
     </header>
     <main>
         <section class="searchSection">
@@ -47,5 +60,6 @@
     <footer>
         Food Bench &copy; 2020 | <a href="https://github.com/bakarfreelancer/food-bench" target="__blank">Get source code</a>
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

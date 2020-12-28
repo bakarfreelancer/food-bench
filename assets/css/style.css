@@ -276,17 +276,7 @@ footer {
 .hide {
   display: none;
 }
-.moveToHide {
-  animation: moveToHide 2s forwards;
-}
-@keyframes moveToHide {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
+
 /* ==Responsive== */
 @media (max-width: 567px) {
   .searchBox input {
