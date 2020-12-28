@@ -177,7 +177,6 @@ nav a {
   top: 5px;
 }
 
-
 /* ==Winter Section== */
 .winterSection {
   background-color: #e5e5e5;
@@ -233,6 +232,16 @@ footer {
 .aboutPage main {
   flex-grow: 1;
 }
+
+/* ==Color Changer == */
+.colorChanger {
+  background-color: rgb(196, 163, 163);
+  max-width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
 /* ==Responsive== */
 @media (max-width: 567px) {
   .searchBox input {
