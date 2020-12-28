@@ -235,13 +235,58 @@ footer {
 
 /* ==Color Changer == */
 .colorChanger {
-  background-color: rgb(196, 163, 163);
   max-width: fit-content;
   position: absolute;
   right: 0;
   top: 10px;
 }
-
+.openClose {
+  text-align: center;
+}
+.colors {
+  display: block;
+}
+.openClose,
+.colorBlock {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+}
+.colorBlock.green {
+  background-color: green;
+}
+.colorBlock.blue {
+  background-color: blue;
+}
+.colorBlock.orange {
+  background-color: orange;
+}
+.colorBlock.red {
+  background-color: red;
+}
+.colorBlock.pink {
+  background-color: pink;
+}
+.colorBlock.brown {
+  background-color: brown;
+}
+.colorBlock.black {
+  background-color: black;
+}
+.hide {
+  display: none;
+}
+.moveToHide {
+  animation: moveToHide 2s forwards;
+}
+@keyframes moveToHide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
 /* ==Responsive== */
 @media (max-width: 567px) {
   .searchBox input {
