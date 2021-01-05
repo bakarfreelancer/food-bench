@@ -177,7 +177,6 @@ nav a {
   top: 5px;
 }
 
-
 /* ==Winter Section== */
 .winterSection {
   background-color: #e5e5e5;
@@ -233,6 +232,51 @@ footer {
 .aboutPage main {
   flex-grow: 1;
 }
+
+/* ==Color Changer == */
+.colorChanger {
+  max-width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.openClose {
+  text-align: center;
+}
+.colors {
+  display: block;
+}
+.openClose,
+.colorBlock {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+}
+.colorBlock.green {
+  background-color: green;
+}
+.colorBlock.blue {
+  background-color: blue;
+}
+.colorBlock.orange {
+  background-color: orange;
+}
+.colorBlock.red {
+  background-color: red;
+}
+.colorBlock.pink {
+  background-color: pink;
+}
+.colorBlock.brown {
+  background-color: brown;
+}
+.colorBlock.black {
+  background-color: black;
+}
+.hide {
+  display: none;
+}
+
 /* ==Responsive== */
 @media (max-width: 567px) {
   .searchBox input {
